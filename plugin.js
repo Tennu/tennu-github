@@ -22,7 +22,7 @@ function getIssueSummary (options) {
         const title = res.title;
         const link = res.html_url;
 
-        return format("[%s %s] <%s> %s (%s)", type, issueNumber, status, title, link);
+        return format("[%s %s] <%s> %s <%s>", type, issueNumber, status, title, link);
     });
 }
 
