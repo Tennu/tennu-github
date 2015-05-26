@@ -1,0 +1,27 @@
+{
+  "name": "tennu-github",
+  "version": "1.0.0",
+  "description": "Github plugin for the Tennu IRC Framework",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Havvy/tennu-github.git"
+  },
+  "keywords": [
+    "tennu-plugin",
+    "github"
+  ],
+  "author": "Ryan Scheel (Havvy)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Havvy/tennu-github/issues"
+  },
+  "homepage": "https://github.com/Havvy/tennu-github",
+  "dependencies": {
+    "bluebird": "^2.9.26",
+    "node-fetch": "^1.2.1"
+  }
+}
