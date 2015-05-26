@@ -1,6 +1,6 @@
 {
   "name": "tennu-github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Github plugin for the Tennu IRC Framework",
   "main": "plugin.js",
   "scripts": {
