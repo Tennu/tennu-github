@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Havvy/tennu-github.git"
+    "url": "https://github.com/Tennu/tennu-github.git"
   },
   "keywords": [
     "tennu-plugin",
@@ -17,9 +17,9 @@
   "author": "Ryan Scheel (Havvy)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Havvy/tennu-github/issues"
+    "url": "https://github.com/Tennu/tennu-github/issues"
   },
-  "homepage": "https://github.com/Havvy/tennu-github",
+  "homepage": "https://github.com/Tennu/tennu-github",
   "dependencies": {
     "bluebird": "^2.9.26",
     "node-fetch": "^1.2.1"
