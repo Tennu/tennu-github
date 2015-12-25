@@ -17,12 +17,31 @@ function getIssueSummary (options) {
             return "Issue does not exist.";
         }
 
-        const type = res.pull_request ? "PR" : "Issue";
+        const type = res.pull_request === undefined ? "Issue" : "PR";
         const status = res.state;
         const title = res.title;
         const link = res.html_url;
 
-        return format("[%s %s] <%s> %s <%s>", type, issueNumber, status, title, link);
+        if (type === "PR" && status === "closed") {
+            return fetch(res.pull_request.url)
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (res) {
+                if (res.message === "Not Found") {
+                    return "PR does not exist.";
+                }
+
+                const type = "PR";
+                const status = res.merged_at === null ? "closed" : "merged";
+                const title = res.title;
+                const link = res.html_url;
+
+                return format("[%s %s] <%s> %s <%s>", type, issueNumber, status, title, link);
+            });
+        } else {
+            return format("[%s %s] <%s> %s <%s>", type, issueNumber, status, title, link);
+        }
     });
 }
 
