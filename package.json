@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Tennu/tennu-github",
   "dependencies": {
-    "bluebird": "^2.9.26",
-    "node-fetch": "^1.2.1"
+    "bluebird": "^3",
+    "node-fetch": "^1"
   }
 }
